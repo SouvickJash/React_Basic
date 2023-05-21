@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 const News = () => {
   const [news, setNews] = useState([]);
   const [loadmore,setLoadMore] = useState(3);
+  const [loding,setLoding] = useState()
   const loading=()=>{
     // setLoadMore((Value)=>Value*2) 
     setLoadMore(loadmore+3);

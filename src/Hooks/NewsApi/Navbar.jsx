@@ -22,6 +22,10 @@ const Navbar = () => {
         <NavLink className="nav-link" to='/trending'>Trending</NavLink>
       </li>
       <li className="nav-item active">
+        <NavLink className="nav-link" to='/product'>Product</NavLink>
+      </li>
+
+      <li className="nav-item active">
         <NavLink className="nav-link" to='*'></NavLink>
       </li>
     

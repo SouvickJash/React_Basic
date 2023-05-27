@@ -1,11 +1,12 @@
+import React from 'react'
 
 const SearchApi = () => {
   return (
     <>
-        <h1>Thsi is Search API</h1>
+         <h1>This is search api</h1>
     </>
   )
 }
 
 export default SearchApi
-
+   

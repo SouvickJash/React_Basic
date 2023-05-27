@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import {SyncLoader} from 'react-spinners'
 
 const TrendingApi = () => {
   const [user, setUser] = useState([]);
   const [loadmore,setLodemore] = useState(3);
+  const [load,setLoad] = useState(true)
   const loading=()=>{
        setLodemore(loadmore+3)
   }
@@ -12,10 +14,18 @@ const TrendingApi = () => {
   const getDetais = async () => {
     const result = await axios.get(baseUrl);
     setUser(result?.data.articles);
+    setLoad(false)
   };
   useEffect(() => {
     getDetais();
   });
+  if(load){
+    return(
+      <>
+         <SyncLoader color="#36d7b7" />
+      </>
+    )
+  }
   console.log(user);
   return (
     <>
@@ -32,18 +42,14 @@ const TrendingApi = () => {
         <div className="row">
          {
             user.slice(0,loadmore).map((item, index)=>{
-               return(
+               return(  
                   <>
             <div className="col-sm">
             <div className="card" style={{ width: "18rem" }}>
               <img src={item.urlToImage} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">{item.source.id}</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href={item.url} class="btn btn-warning" style={{marginLeft:"60px", marginTop:"10px"}}>Go somewhere</a>
+                <h5 className="card-title">{item.title}</h5>
+                <a href={item.url} class="btn btn-primary" style={{marginLeft:"60px", marginTop:"10px"}}>Go somewhere</a>
               </div>
             </div>
           </div>

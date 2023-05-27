@@ -1,26 +1,33 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import {PulseLoader} from 'react-spinners' 
 
 const News = () => {
   const [news, setNews] = useState([]);
   const [loadmore,setLoadMore] = useState(3);
-  const [loding,setLoding] = useState()
+  const [load,setLoding] = useState(true)
   const loading=()=>{
     // setLoadMore((Value)=>Value*2) 
     setLoadMore(loadmore+3);
   }
   //https://newsapi.org/v2/everything?q=india&apiKey=f2b86ca3d3ac43d689830404d4545385
-  const url ='https://newsapi.org/v2/everything?q=tesla&from=2023-04-21&sortBy=publishedAt&apiKey=da922dc665fb40a88efac632d6a15a7a'
+  const url ='https://jsonplaceholder.typicode.com/users'
     
   const getapi = async () => {
     const response = await axios.get(url);
     setNews(response?.data.articles);
+    setLoding(false)
   };
   useEffect(() => {
     getapi();
   }, []);
-  console.log(news);
+  if(load){
+    return(
+    <>
+       <PulseLoader color="#36d7b7" />   
+    </>)
+  }
+  console.log(news); 
   return (
     <>
       {/* {

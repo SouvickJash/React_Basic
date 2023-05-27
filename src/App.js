@@ -15,11 +15,20 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 // import Home from "./Hooks/useEffect/Home";
 // import PhotoUser from "./Hooks/useEffect/PhotoUser";
 
-import News from './Hooks/NewsApi/News';
-import Navbar from './Hooks/NewsApi/Navbar'
-import SearchApi from './Hooks/NewsApi/SearchApi';
-import TrendingApi from './Hooks/NewsApi/TrendingApi';
-import ErrorPage from './Hooks/NewsApi/ErrorPage';
+// import News from './Hooks/NewsApi/News';
+// import Navbar from './Hooks/NewsApi/Navbar'
+// import SearchApi from './Hooks/NewsApi/SearchApi';
+// import TrendingApi from './Hooks/NewsApi/TrendingApi';
+// import ErrorPage from './Hooks/NewsApi/ErrorPage';
+// import Product from './Hooks/Pages/Product';
+// import ProductDetails from './Hooks/Pages/ProductDetails';
+// import Example from './Hooks/UseReducer/Example';
+// import Mui from './Mui';
+
+// import Result from './Hooks/UseContextHooks/Result';
+
+import ContextRouting from './Hooks/UseContextHooks/ContextRouting';
+import ContexState from './Hooks/UseContextHooks/Context/ContexState';
 
 function App() {
   return (
@@ -31,20 +40,26 @@ function App() {
       {/* <UseEffect1/> */}
       {/* <Home/> */}
       {/* <PhotoUser/> */}
-      
-
-    
+      {/* <Example/> */}
+      {/* <Mui/> */}
+      <ContexState>
+          <ContextRouting/>  
+      </ContexState> 
     <Router>
-        <Navbar/> 
+        {/* <Navbar/>  */}
         <Routes>
-         {/* <Route path="/user" element={<User/>}/>
-         <Route path="/user/:id" element={<Singleuser/>}/>
-         <Route path="/photos" element={<UserPhoto/>}/> */}
-          <Route path='/' element={<News/>}/>
-         <Route path='/search' element={<SearchApi/>}/>
-         <Route path='/trending' element={<TrendingApi/>}/>
-         <Route path='*' element={<ErrorPage/>}/> 
-        </Routes>
+          {/* <Route path="/user" element={<User/>}/>
+          <Route path="/user/:id" element={<Singleuser/>}/>
+          <Route path="/photos" element={<UserPhoto/>}/> */}
+          {/* <Route path='/' element={<News/>}/> */}
+          {/* <Route path='/search' element={<SearchApi/>}/> */}
+          {/* <Route path='/trending' element={<TrendingApi/>}/> */}
+          {/* <Route path='*' element={<ErrorPage/>}/>  */}
+          {/* <Route path='/product' element={<Product/>}/> */}
+         
+          {/* <Route path='/' element={<Example/>}/> */}
+
+          </Routes>
     </Router>
     
   

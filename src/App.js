@@ -28,7 +28,10 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 // import Result from './Hooks/UseContextHooks/Result';
 
 import ContextRouting from './Hooks/UseContextHooks/ContextRouting';
-import ContexState from './Hooks/UseContextHooks/Context/ContexState';
+// import ContexState from './Hooks/UseContextHooks/Context/ContexState';
+// import Api from './Hooks/UseContextHooks/Context/Api';
+// import ContexState from './Hooks/UseContextHooks/Context/ContexState';
+//import ContaxState1 from './Hooks/UseContextHooks/Context/ContaxState1';
 
 function App() {
   return (
@@ -42,12 +45,17 @@ function App() {
       {/* <PhotoUser/> */}
       {/* <Example/> */}
       {/* <Mui/> */}
-      <ContexState>
-          <ContextRouting/>  
-      </ContexState> 
-    <Router>
+
+
+   
+         <ContextRouting/>
+     
+
+
+      
+    {/* <Router> */}
         {/* <Navbar/>  */}
-        <Routes>
+        {/* <Routes> */}
           {/* <Route path="/user" element={<User/>}/>
           <Route path="/user/:id" element={<Singleuser/>}/>
           <Route path="/photos" element={<UserPhoto/>}/> */}
@@ -58,10 +66,10 @@ function App() {
           {/* <Route path='/product' element={<Product/>}/> */}
          
           {/* <Route path='/' element={<Example/>}/> */}
-
+{/* 
           </Routes>
     </Router>
-    
+     */}
   
 
 

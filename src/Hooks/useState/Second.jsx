@@ -30,6 +30,7 @@ const Second = () => {
       <h4 style={{color: 'green'}}>Count the number:<h3 style={{color: 'black'}}>{count}</h3></h4>
       <button type="button" className='btn btn-primary' onClick={Add}>Increment</button>
       <button type="button" className='btn btn-primary' onClick={Sub }>Decrement</button>
+      
     </>
   )
 }

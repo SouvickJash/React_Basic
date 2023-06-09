@@ -7,7 +7,7 @@ function reducer(state,action){
          case "increment":
          return 'sartik'
          case "decremnt":
-            return 'souvick'
+         return 'souvick'
          default:
             return state
        }
@@ -23,7 +23,7 @@ const Example = () => {
       <button onClick={()=>dispatch({type:"decremnt"})}>sub</button> */}
 
 
-   <Button variant="contained" onClick={()=>dispatch({type:"increment"})}>add</Button>
+  <Button variant="contained" onClick={()=>dispatch({type:"increment"})}>add</Button>
   <Button variant="outlined" onClick={()=>dispatch({type:"decremnt"})}>sub</Button>
     </div>
   )

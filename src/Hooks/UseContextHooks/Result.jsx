@@ -1,15 +1,33 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import CreateContexts1 from "./Context/CreateContext1";
+// import { useEffect } from "react";
+// import ClipLoader from "react-spinners/ClipLoader";
 
 const Result = () => {
   const user = useContext(CreateContexts1);
+  // const [loding,setLoading]=useState(false)
   console.log(user);
   
-
+  // useEffect(()=>{
+  //     setLoading(true)
+  //     setTimeout(()=>{
+  //       setLoading(false)
+  //     },3000)
+  // },[])
   return (
     <>
-      <h1>Data use fatch from context</h1>
-     
+    {/* {
+      loding?
+      <ClipLoader
+      color={color}
+      loading={loading}
+      cssOverride={override}
+      size={150}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+    />
+    } */}
+      <h2>This is result page</h2>
       <div class="container">
         <div class="row">
           {

@@ -6,6 +6,7 @@ const TrendingApi = () => {
   const [user, setUser] = useState([]);
   const [loadmore,setLodemore] = useState(3);
   const [load,setLoad] = useState(true)
+  
   const loading=()=>{
        setLodemore(loadmore+3)
   }

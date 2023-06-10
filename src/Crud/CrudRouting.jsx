@@ -15,7 +15,7 @@ const CrudRouting = () => {
          <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/adduser' element={<AddUser/>}/>
-            <Route path='/update' element={<UpdateUser/>}/>
+            <Route path='/update/:id' element={<UpdateUser/>}/>
          </Routes>
       </Router>
     </>

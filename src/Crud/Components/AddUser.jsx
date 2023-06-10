@@ -87,6 +87,7 @@ const postUserData = (e) => {
     }
 
 }
+
    const SubmitInfo=async(e)=>{
       e.preventDefault()
       let ErrorList = validation()

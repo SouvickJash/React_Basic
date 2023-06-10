@@ -1,46 +1,11 @@
 {
   "users": [
     {
-      "name": "souvick",
-      "email": "souvick@gmail.com",
-      "phone": "1234567890",
+      "name": "Souvick jash",
+      "email": "souvickjash9836@gmail.com",
+      "phone": "06296994522",
       "city": "kolkata",
       "id": 1
-    },
-    {
-      "name": "s",
-      "email": "s@gmail.com",
-      "phone": "132",
-      "city": "23",
-      "id": 2
-    },
-    {
-      "name": "souvick Jash",
-      "email": "souvickjash9836@gmail.com",
-      "phone": "6296994522",
-      "city": "kolkata",
-      "id": 3
-    },
-    {
-      "name": "joy",
-      "email": "joy@gmail.com",
-      "phone": "12345",
-      "city": "jfdsfk",
-      "id": 4
-    },
-    {
-      "name": "hello",
-      "email": "h@gmail.com",
-      "phone": "123456",
-      "city": "cfdsj",
-      "id": 5
-    },
-    {
-      "name": "a",
-      "email": "a@gmail.com",
-      "phone": "1122",
-      "city": "kolkata",
-      "id": 6
     }
   ]
 }

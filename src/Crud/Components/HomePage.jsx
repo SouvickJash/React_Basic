@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { getAllUsers } from "../Api/Api";
+import { deleteUser } from "../Api/Api";
+import { toast } from "react-toastify";
 
 const HomePage = () => {
   const [users, setUsers] = useState([]);
@@ -10,6 +12,13 @@ const HomePage = () => {
     //  console.log(response)
     setUsers(response?.data);
   };
+
+//delete user
+const deleteUserData=async(id)=>{
+  await deleteUser(id);
+  getUsers()
+  toast.error('Data deleted successfully');
+}
   useEffect(() => {
     getUsers();
   }, []);
@@ -42,12 +51,12 @@ const HomePage = () => {
                     <td>{item.city}</td>
                     <td>{item.phone}</td>
                     <td>
-                      <Link to="/" className="btn btn-success">
+                      <Link to={`/update/${item.id}`} className="btn btn-success">
                         Update
                       </Link>
                     </td>
                     <td>
-                      <Link to="/" className="btn btn-danger">
+                      <Link onClick={() => deleteUserData(item.id)} className="btn btn-danger">
                         Delete
                       </Link>
                     </td>

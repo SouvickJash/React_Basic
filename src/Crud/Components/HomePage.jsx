@@ -30,7 +30,7 @@ const deleteUserData=async(id)=>{
         <Link to="/adduser" className="btn btn-primary">
           Add User
         </Link>
-        <p></p>
+      
         <table class="table">
           <thead>
             <tr>

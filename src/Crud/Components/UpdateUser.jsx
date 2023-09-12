@@ -11,7 +11,6 @@ const initialValues = {
   email: '',
   phone: '',
   city: "",
-
 }
 
 const UpdateUser = () => {
@@ -91,30 +90,20 @@ const postUserData = (e) => {
   }
 
 }
+
 const SubmitInfo = e => {
   e.preventDefault()
   let ErrorList = validation()
   setError(ErrorList)
-
-  // if (Object.keys(ErrorList).length === 0) {
-  //     let reg = {
-  //         name: user.name,
-  //         email: user.email,
-  //         phone: user.phone,
-  //         password: user.password,
-  //         city: user.city,
-  //         state: user.state,
-  //         dob: user.dob
-  //     }
-  //     console.log(reg)
-  // }
 }
+
 //update post data
 const UpdatedData=async()=>{
     await UpdateUserData(user, id)
     navigate('/')
     toast.success("Data update successfully");
 }
+
 //edit user
 const getData = async () => {
   let response = await getEditData(id)

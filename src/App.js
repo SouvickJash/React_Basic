@@ -1,16 +1,18 @@
 // import UpdateClass from './Hooks/ClassComponent/UpdateClass';
 // import HocDemo from './Hooks/Hoc/HocDemo';
-import CrudRouting from './Crud/CrudRouting';
+
+// import CrudRouting from './Crud/CrudRouting';
+
 // import MyRouter from './Hooks/HomeWork/MyRouter';
 import './index.css'
 // import First from "./Hooks/useState/First";
-// import Second from "./Hooks/useState/Second";
+import Second from "./Hooks/useState/Second";
 // import Example3 from "./Hooks/useState/Example3";
 // import UserData from "./Hooks/useEffect/UserData";
 // import UseEffect1 from "./Hooks/useEffect/UseEffect1";
 
 // import React from 'react'
-// import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { BrowserRouter as Router,Routes, } from 'react-router-dom'
 // import Navbar from './Hooks/useEffect/Navbar'
 // import User from './Hooks/useEffect/User'
 // import Singleuser from './Hooks/useEffect/Singleuser'
@@ -24,8 +26,11 @@ import './index.css'
 // import SearchApi from './Hooks/NewsApi/SearchApi';
 // import TrendingApi from './Hooks/NewsApi/TrendingApi';
 // import ErrorPage from './Hooks/NewsApi/ErrorPage';
+// import { Route } from 'react-router-dom';
+
 // import Product from './Hooks/Pages/Product';
 // import ProductDetails from './Hooks/Pages/ProductDetails';
+
 // import Example from './Hooks/UseReducer/Example';
 // import Mui from './Mui';
 
@@ -44,7 +49,7 @@ function App() {
   return (
     <>
       {/* <First/> */}
-      {/* <Second/> */}
+      <Second/>
       {/* <Example3/> */}
       {/* <UserData/> */}
       {/* <UseEffect1/> */}
@@ -61,26 +66,30 @@ function App() {
       {/* <MyRouter/> */}
 
       {/* crud operation */}
-      <CrudRouting/>
+      {/* <CrudRouting/>     */}
 
 
-      {/* <Router> */}
+      <Router>
       {/* <Navbar/>  */}
-      {/* <Routes> */}
+      <Routes>
+
       {/* <Route path="/user" element={<User/>}/>
           <Route path="/user/:id" element={<Singleuser/>}/>
           <Route path="/photos" element={<UserPhoto/>}/> */}
-      {/* <Route path='/' element={<News/>}/> */}
-      {/* <Route path='/search' element={<SearchApi/>}/> */}
-      {/* <Route path='/trending' element={<TrendingApi/>}/> */}
-      {/* <Route path='*' element={<ErrorPage/>}/>  */}
+
+     
+      {/* <Route path='/' element={<News/>}/>
+      <Route path='/search' element={<SearchApi/>}/>
+      <Route path='/trending' element={<TrendingApi/>}/>
+      <Route path='*' element={<ErrorPage/>}/>  */}
+      
       {/* <Route path='/product' element={<Product/>}/> */}
 
       {/* <Route path='/' element={<Example/>}/> */}
-      {/* 
-          </Routes>
+      
+        </Routes>
     </Router>
-     */}
+    
     </>
   );
 }

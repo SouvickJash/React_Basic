@@ -11,6 +11,7 @@ export const getAllUsers = async () => {
        console.log('Error while calling getUsers API', error.message)
    }
 }
+
 //user add data
 export const addUser = async (data) => {
     try {
@@ -20,6 +21,8 @@ export const addUser = async (data) => {
         console.log('Error while calling addUser API', error.message)
     }
 }
+
+
 //edit user data
 export const getEditData = async (data) => {
     try {
@@ -29,6 +32,7 @@ export const getEditData = async (data) => {
         console.log('Error while calling getUser API', error.message)
     }
 }
+
 //update user data
 export const UpdateUserData = async (data, id) => {
     try {

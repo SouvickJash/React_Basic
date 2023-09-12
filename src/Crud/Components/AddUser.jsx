@@ -131,7 +131,7 @@ const postUserData = (e) => {
                 <div>
                     <button type="submit" className="btn btn-success px-4 py-2"> Add User </button>
                 </div>
-            </form>
+     </form>
     </>
   )
 }

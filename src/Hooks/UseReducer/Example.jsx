@@ -1,13 +1,13 @@
 import React, { useReducer} from 'react'
 import {Button} from '@mui/material'
 
-const i='souvick'
+const i="souvick"
 function reducer(state,action){
        switch(action.type){
          case "increment":
-         return 'sartik'
+         return "souvick"
          case "decremnt":
-         return 'souvick'
+         return "Jash"
          default:
             return state
        }
@@ -23,8 +23,8 @@ const Example = () => {
       <button onClick={()=>dispatch({type:"decremnt"})}>sub</button> */}
 
 
-  <Button variant="contained" onClick={()=>dispatch({type:"increment"})}>add</Button>
-  <Button variant="outlined" onClick={()=>dispatch({type:"decremnt"})}>sub</Button>
+     <Button variant="contained" onClick={()=>dispatch({type:"increment"})}>add</Button>
+      <Button variant="outlined" onClick={()=>dispatch({type:"decremnt"})}>sub</Button>
     </div>
   )
 }

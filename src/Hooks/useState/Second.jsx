@@ -5,17 +5,18 @@ const Second = () => {
   const [count,setCount]=useState(0)
   const fun1=()=>{
     //  setName("Sayan")
-   let info=name;
+    let info=name;
+
   //  if(info==='Souvick'){
   //     setName("Sayan");
   //  }else{
   //     setName('Souvick');
-  //  }
-    
+  //  } 
+
   info==='Souvick'? setName('Sayan'):setName('Souvick')
     
   }
-  //count the numnber
+  //count the number
   const Add=()=>{
     setCount(count+1);
  }

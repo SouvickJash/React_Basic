@@ -29,7 +29,6 @@ useEffect(()=>{
   getTodos()
   getPost()
 },[])
-
 const example={user,todos,post}
 
 // console.log(user)
@@ -44,5 +43,4 @@ const example={user,todos,post}
     </>
   )
 }
-
 export default State2
